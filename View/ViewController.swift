@@ -16,6 +16,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         super.viewDidLoad()
         tableview.delegate = self
         tableview.dataSource = self
+        //Url created
         let url = URL(string:"https://raw.githubusercontent.com/atilsamancioglu/BTK-iOSDataSet/master/dataset.json" )
         
         WebService().haberleriIndir(uRl: url!) { (haberler) in
